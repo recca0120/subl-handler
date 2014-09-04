@@ -119,7 +119,7 @@ else
   
   str = URLDecode(WScript.Arguments(2))
   Set re = New RegExp
-  re.Pattern = "subl://open/\?url=file://(.+)&line=([0-9]+)"
+  re.Pattern = "subl://open.?\?url=file://(.+)&line=([0-9]+)"
   re.IgnoreCase = True
   re.Global = False
   Set matches = re.Execute(str)
