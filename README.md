@@ -44,7 +44,7 @@ Click on and subl: link to see it working.
 It is safe to run this script, it doesn't change any files in your system. It only adds some small entry into windows registry.
 
 When you run this script without parameters it will run itself ad administrator to be able to import .reg file into windows registry.
-The imported .reg file looks like this:
+The imported .reg file looks something like this:
 ```
 Windows Registry Editor Version 5.00
 
@@ -57,7 +57,7 @@ Windows Registry Editor Version 5.00
 [HKEY_CLASSES_ROOT\subl\shell\open]
 
 [HKEY_CLASSES_ROOT\subl\shell\open\command]
-@="\"wscript.exe\" \"C:\\sublime.vbs\" 1 \"C:\\Program Files\\Sublime Text 3\\sublime_text.exe\" %1"
+@="\"wscript.exe\" \"C:\\subl-handler.vbs\" 1 \"C:\\Program Files\\Sublime Text 3\\sublime_text.exe\" %1"
 ```
 
 It adds this script as a handler for subl: protocol.
