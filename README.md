@@ -43,7 +43,7 @@ Click on and subl: link to see it working.
 
 It is safe to run this script, it doesn't change any files in your system. It only adds some small entry into windows registry.
 
-When you run this script without parameters it will run itself ad administrator to be able to import .reg file into windows registry.
+When you run this script without parameters it will run itself as administrator to be able to import .reg file into windows registry.
 The imported .reg file will look something like this:
 ```
 Windows Registry Editor Version 5.00
