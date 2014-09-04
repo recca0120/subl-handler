@@ -14,10 +14,23 @@ Of course it works only on local webserver (in your local filesystem).
 ## Compatibility
 
 There are two versions of this script:
-- `sublime.vbs` - this script works fine with **sublime** or any other text editor that supports line numbers attached to the end of filename (filename:line_number)
-- `eclipse.vbs` - this script works fine with **eclipse** or any other text editor that **doesn't** support line numbers on the end of filename
+- `sublime.vbs` - this script works fine with **sublime** or **netbeans** or other editor that supports line number attached to the end of filename like this `filename:###` (where ## is line number)
+- `notepadpp.vbs` - this script works fine with **notepad++** or other editor that supports line number attached to the end of filename like this `filename -n###` (where ## is line number)
+- `eclipse.vbs` - this script works fine with **eclipse** or any other text editor, but it doesn't pass a line number into editor so it will open file normally (at the beggining)
 
-If the "sublime" version doesn't work fine for you, use "eclipse" version which works fine even with notepad.exe :)
+If the "sublime" version doesn't work fine for you then use "eclipse" version which works fine even with notepad.exe :)
+
+Text editors that I know to support line numbers using filename:###
+- sublime
+- netbeans
+
+Text editors that I know to support line numbers using filename -n###
+- notepad++
+
+Text editors that I know *not supporting* line numbers in filename:
+- eclipse
+- pspad
+- notepad
 
 ## Installation
 
