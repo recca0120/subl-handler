@@ -6,7 +6,7 @@ subl-handler
 This vbs script handles `subl:` url scheme to open it in your text editor.
 
 Example link
-``` subl://open?url=file://C%3A%5Chtdocs%5Cmyapp%5Cvendor%5Claravel%5Cframework%5Csrc%5CIlluminate%5CSupport%5CFacades%5CFacade.php&line=214 ```
+``` subl://open?url=file://C:\htdocs\myapp\vendor\laravel\framework\src\Illuminate\Support\Facades\Facade.php&line=214 ```
 
 I found it very useful when debugging Laravel based applications because Laravel's exception page use subl links on every filename.
 Of course it works only on local webserver (in your local filesystem).
