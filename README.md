@@ -60,6 +60,4 @@ Windows Registry Editor Version 5.00
 @="\"wscript.exe\" \"C:\\subl-handler.vbs\" 1 \"C:\\Program Files\\Sublime Text 3\\sublime_text.exe\" %1"
 ```
 
-This adds the subl-handler.vbs script as a handler for subl: protocol.
-
-When you click subl: link your browser will run this script. The script reads the subl: link, parse it and run the selected text editor with proper command line arguments.
+This adds the subl-handler.vbs script as a handler for `subl:` protocol so when you click `subl:` link your browser will run the script. The script reads the link, parse it and run the selected text editor with proper command line arguments.
