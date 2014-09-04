@@ -13,28 +13,23 @@ Of course it works only on local webserver (in your local filesystem).
 
 ## Compatibility
 
-There are two versions of this script:
-- `sublime.vbs` - this script works fine with **sublime** or **netbeans** or other editor that supports line number attached to the end of filename like this `filename:###` (where ## is line number)
-- `notepadpp.vbs` - this script works fine with **notepad++** or other editor that supports line number attached to the end of filename like this `filename -n###` (where ## is line number)
-- `eclipse.vbs` - this script works fine with **eclipse** or any other text editor, but it doesn't pass a line number into editor so it will open file normally (at the beggining)
+I tested this script on Windows 8 with Sublime 3, Netbeans 8 and Notepad++ 6.6.8 but it should work on other Windows systems as well.
 
-If the "sublime" version doesn't work fine for you then use "eclipse" version which works fine even with notepad.exe :)
-
-Text editors that I know to support line numbers using filename:###
+Text editors that I know to support line numbers using `filename:###` syntax (option 1 in setup)
 - sublime
 - netbeans
 
-Text editors that I know to support line numbers using filename -n###
+Text editors that I know to support line numbers using `filename -n###` syntax (option 2 in setup)
 - notepad++
 
 Text editors that I know *not supporting* line numbers in filename:
 - eclipse
 - pspad
 - notepad
+- and many other editors that use standard windows file open syntax (`application.exe %1`)
 
 ## Installation
 
-- select the script version you need according to "compatibility" section of this readme
 - copy the selected script to any location on your disk. I suggest to copy it to c: or c:\Users or something like this. The file will have to stay there because it will handle subl: links and follow it to your text editor
 - run the script and follow instructions on the screen
 
@@ -61,9 +56,9 @@ Windows Registry Editor Version 5.00
 [HKEY_CLASSES_ROOT\subl\shell\open]
 
 [HKEY_CLASSES_ROOT\subl\shell\open\command]
-@="\"wscript.exe\" \"C:\\sublime.vbs\" \"C:\\Program Files\\Sublime Text 3\\sublime_text.exe\" %1"
+@="\"wscript.exe\" \"C:\\sublime.vbs\" 1 \"C:\\Program Files\\Sublime Text 3\\sublime_text.exe\" %1"
 ```
 
 It adds this script as a handler for subl: protocol.
 
-When you click subl: link your browser run this scrip which reads the subl: link, parse it and run the selected text editor.
+When you click subl: link your browser will run this script. The script reads the subl: link, parse it and run the selected text editor with proper command line arguments.
