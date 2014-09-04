@@ -8,7 +8,7 @@ This vbs script handles `subl:` url scheme to open it in your text editor.
 Example link
 ``` subl://open?url=file://C:\htdocs\myapp\vendor\laravel\framework\src\Illuminate\Support\Facades\Facade.php&line=214 ```
 
-I found it very useful when debugging Laravel based applications because Laravel's exception page use subl links on every filename.
+I found it very useful when debugging Laravel based applications because Laravel's exception page use `subl:` links on every filename.
 Of course it works only on local webserver (in your local filesystem).
 
 ## Compatibility
@@ -30,7 +30,7 @@ Text editors that I know *not supporting* line numbers in filename:
 
 ## Installation
 
-- copy the selected script to any location on your disk. I suggest to copy it to c: or c:\Users or something like this. The file will have to stay there because it will handle subl: links and follow it to your text editor
+- copy the selected script to any location on your disk. I suggest to copy it to c: or c:\Users or something like this. The file will have to stay there because it will handle `subl:` links and follow it to your text editor
 - run the script and follow instructions on the screen
 
 ## Usage
