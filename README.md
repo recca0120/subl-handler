@@ -41,7 +41,7 @@ Click on and subl: link to see it working.
 
 ## How it works / Is it safe?
 
-It is safe to run this script, it doesn't change any files in your system only add some small entry into windows registry.
+It is safe to run this script, it doesn't change any files in your system. It only adds some small entry into windows registry.
 
 When you run this script without parameters it will run itself ad administrator to be able to import .reg file into windows registry.
 The imported .reg file looks like this:
