@@ -35,7 +35,7 @@ Text editors that I know *not supporting* line numbers in filename:
 
 ## Usage
 
-Click on and subl: link to see it working.
+Click on any `subl:` link to see it working.
 
 *Note for Mozilla Firefox users*: Firefox will ask you what to do with subl: links for the first time you click on it. Simply click the OK button and Firefox will choose the default action, which is this script since you installed it. Firefox will ask about this only once.
 
